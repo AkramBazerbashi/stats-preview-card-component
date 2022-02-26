@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Lexend+Deca">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  .colors{
+    color: hsl(233, 47%, 7%);
+    color: hsl(244, 38%, 16%);
+    color: hsl(277, 64%, 61%);
+    color: hsl(0, 0%, 100%);
+    color: hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+  *{
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: hsl(233, 47%, 7%);
+  }
+  .container{
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    margin: 20vh auto;
+  }
+  .left{
+    width: 50%;
+    padding: 60px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+
+  }
+  .info{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .left h1{
+    width: 80%;
+
+  }
+  .left p {
+    width: 70%;
+
+  }
+  .left h1{
+    color: hsl(0, 0%, 100%);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 33px;
+    margin-top: 0px;
+  }
+  span{
+    color: hsl(277, 64%, 61%);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 35px
+  }
+  .left p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca";
+    font-weight: 400;
+  }
+  .info{
+    width: 70%;
+
+  }
+  .info p:first-child{
+    color: hsl(0, 0%, 100%);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+  }
+  .info p:nth-child(2){
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    margin-top: 10px;
+
+  }
+
+  .right{
+    width: 50%;
+  }
+  .right img{
+    width: 540px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 381px; 
+
+  }
+  .for{
+    background-color: hsla(277, 64%, 61%, 0.3);
+    height: 381px; 
+    max-width: 540px;    
+    position: relative;
+    top: -385px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  @media (max-width: 375px) {
+    .container{
+      flex-direction: column;
+    }
+    .left{
+      order: 1;
+    }
+    .container{
+      width: 95%;
+      height: 90vh;
+      margin: 5vh auto;
+    }
+    .left{
+      width: 331px;
+      padding: 30px;
+      border-top-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      margin-top: -5px;
+    }
+    .info{
+      flex-direction: column;
+      width: 100%;
+    }
+    .left h1{
+      width: 100%;
+      text-align: center;
+
+    }
+    .left p {
+      width: 80%;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 40px;
+
+
+    }
+    .left h1{
+      font-size: 33px;
+      margin-top: 0px;
+    }
+    span{
+      font-size: 35px
+    }
+    .info{
+      width: 100%;
+
+    }
+    .info p:first-child{
+      font-size: 20px;
+      margin-bottom: 10px;
+
+    }
+    .info p:nth-child(2){
+      margin-top: 10px;
+
+    }
+
+    .right{
+      width: 100%;
+    }
+    .right img{
+      width: 331px;
+      height: 250px; 
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 0px;
+
+    }
+    .for{
+      height: 250px; 
+      width: 331px;
+      position: absolute;  
+      top: 27px;
+      z-index: 2;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 0px;
+    }
+
+  }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="left">
+    <h1>Get <span>insights</span> that help your business grow.</h1>
+    <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
+    <div class="info">
+      <div><p>10k+</p><p>companies</p></div>
+      <div><p>314</p><p>templates</p></div>
+      <div><p>12m+</p><p>queries</p></div>
+    </div>
+  </div>
+  <div class="right">
+    <img src="images/image-header-desktop.jpg">
+    <div class="for"></div>
+  </div>
+</div>
+  </div>
+</body>
+</html>
